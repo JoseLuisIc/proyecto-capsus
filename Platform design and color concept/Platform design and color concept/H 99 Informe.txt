@@ -1,0 +1,168 @@
+Informe del paquete
+
+-----------------------------------------------------------------------------
+Documento:
+Nombre: H 99.ai
+Modo de color: Color RGB
+Perfil de color: sRGB IEC61966-2.1
+Unidades de regla: p’xeles
+Dimensiones de la mesa de trabajo: 1402.6311 px x 2021.4689 px
+Mostrar im‡genes en modo contorno: Desactivado
+Resaltar fuentes sustituidas: Desactivado
+Resaltar glifos sustituidos: Desactivado
+Conservar capacidad de edici—n de texto
+Simular papel de color: Desactivado
+
+-----------------------------------------------------------------------------
+Objetos de tintas planas:
+
+-----------------------------------------------------------------------------
+Fuentes no disponibles:Ninguno
+
+-----------------------------------------------------------------------------
+Fuentes protegidas no empaquetadas:
+Roboto Light (Adobe Fonts)
+
+-----------------------------------------------------------------------------
+Fuentes:
+Myriad Pro (OTF)
+Roboto Regular (OTF)
+Roboto Bold Condensed (OTF)
+Roboto Thin (TrueType)
+Roboto Condensed (OTF)
+
+-----------------------------------------------------------------------------
+Fuentes incrustadas:
+Ninguno
+
+-----------------------------------------------------------------------------
+Enlaces no disponibles:
+Ninguno
+
+-----------------------------------------------------------------------------
+Im‡genes enlazadas:
+
+/Usuarios/antares/Descargas/Template_Carpeta/Links/productivity-148197_640.png
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 1315K, 640 por 526 p’xeles
+Dimensiones: 246.376 por 202.49 puntos 
+Resoluci—n: 187.032 por 187.032 p’xeles por pulgada
+
+
+/Usuarios/antares/Descargas/Template_Carpeta/Links/productivity-148197_640.png
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 1315K, 640 por 526 p’xeles
+Dimensiones: 246.376 por 202.49 puntos 
+Resoluci—n: 187.032 por 187.032 p’xeles por pulgada
+
+
+/Usuarios/antares/Descargas/Template_Carpeta/Links/productivity-148197_640.png
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 1315K, 640 por 526 p’xeles
+Dimensiones: 246.376 por 202.49 puntos 
+Resoluci—n: 187.032 por 187.032 p’xeles por pulgada
+
+
+/Usuarios/antares/Descargas/Template_Carpeta/Links/descarga.jpg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 147K, 309 por 163 p’xeles
+Dimensiones: 1400.488 por 811.311 puntos 
+Resoluci—n: 15.886 por 14.465 p’xeles por pulgada
+
+
+/Usuarios/antares/Descargas/Template_Carpeta/Links/gui-2311261_640.png
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 922K, 640 por 492 p’xeles
+Dimensiones: 490.887 por 377.369 puntos 
+Resoluci—n: 93.871 por 93.871 p’xeles por pulgada
+
+
+/Usuarios/antares/Descargas/Template_Carpeta/Links/iphone-410324_1280.jpg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 3198K, 1280 por 853 p’xeles
+Dimensiones: 639.721 por 426.314 puntos 
+Resoluci—n: 144.063 por 144.063 p’xeles por pulgada
+
+
+/Usuarios/antares/Descargas/Template_Carpeta/Links/gui-2311261_640.png
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 922K, 640 por 492 p’xeles
+Dimensiones: 490.887 por 377.369 puntos 
+Resoluci—n: 93.871 por 93.871 p’xeles por pulgada
+
+
+/Usuarios/antares/Descargas/Template_Carpeta/Links/iphone-410324_1280.jpg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 3198K, 1280 por 853 p’xeles
+Dimensiones: 639.721 por 426.314 puntos 
+Resoluci—n: 144.063 por 144.063 p’xeles por pulgada
+
+
+/Usuarios/antares/Descargas/Template_Carpeta/Links/gui-2311261_640.png
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 922K, 640 por 492 p’xeles
+Dimensiones: 490.887 por 377.369 puntos 
+Resoluci—n: 93.871 por 93.871 p’xeles por pulgada
+
+
+/Usuarios/antares/Descargas/Template_Carpeta/Links/gui-2311261_640.png
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 922K, 640 por 492 p’xeles
+Dimensiones: 490.887 por 377.369 puntos 
+Resoluci—n: 93.871 por 93.871 p’xeles por pulgada
+
+
+/Usuarios/antares/Descargas/Template_Carpeta/Links/iphone-410324_1280.jpg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 3198K, 1280 por 853 p’xeles
+Dimensiones: 639.721 por 426.314 puntos 
+Resoluci—n: 144.063 por 144.063 p’xeles por pulgada
+
+
+/Usuarios/antares/Descargas/Template_Carpeta/Links/iphone-410324_1280.jpg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 3198K, 1280 por 853 p’xeles
+Dimensiones: 639.721 por 426.314 puntos 
+Resoluci—n: 144.063 por 144.063 p’xeles por pulgada
+
+
+/Usuarios/antares/Descargas/Template_Carpeta/Links/mauro-mora-31-pOduwZGE-unsplash.jpg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 49126K, 5016 por 3343 p’xeles
+Dimensiones: 1402.631 por 934.808 puntos 
+Resoluci—n: 257.482 por 257.482 p’xeles por pulgada
+
+
+/Usuarios/antares/Descargas/Template_Carpeta/Links/descarga.jpg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 147K, 309 por 163 p’xeles
+Dimensiones: 1400.488 por 811.311 puntos 
+Resoluci—n: 15.886 por 14.465 p’xeles por pulgada
