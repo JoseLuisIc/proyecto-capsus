@@ -1,0 +1,2341 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en_GB">
+
+  
+  
+<!-- Mirrored from data.gov.sg/search by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2020 00:37:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!--[if lte ie 8]><script type="text/javascript" src="/fanstatic/vendor/:version:2020-10-28T11:48:10/html5.min.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="fanstatic/vendor/_version_2020-10-28T11_48_10/select2/select2.css" />
+<link rel="stylesheet" type="text/css" href="fanstatic/capsus-css/_version_2020-11-09T11_20_33.01/datagovsg.min.css" />
+<link rel="stylesheet" type="text/css" href="fanstatic/capsus-css/_version_2020-11-09T11_20_33.01/package/search.min.css" />
+
+
+    <title>
+      Data.gov.sg
+      
+    </title>
+
+    
+    <meta charset="utf-8">
+    <meta name="generator" content="ckan ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no">
+    <meta name="description" content="Singapore&#39;s open data portal">
+    <meta name="theme-color" content="#113355">
+    <meta name="application-name" content="Data.gov.sg">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@datagovsg">
+    <meta name="twitter:title" content="Data.gov.sg
+      ">
+    <meta name="twitter:description" content="Singapore&#39;s open data portal">
+    <meta name="twitter:url" content="search.html">
+    <meta name="twitter:image:src" content="images/thumbnail.png">
+    
+    <meta property="og:title" content="Data.gov.sg
+      " />
+    <meta property="og:description" content="Singapore&#39;s open data portal" />
+    <meta property="og:type" content="article" >
+    <meta property="og:url" content="search.html" >
+    <meta property="og:image" content="images/thumbnail.png" >
+    <meta property="og:site_name" content="Data.gov.sg" >
+    
+    <meta name="apple-mobile-web-app-title" content="Data.gov.sg">
+    
+    <meta name="msapplication-TileColor" content="#113355">
+    <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+    
+
+    
+    <link rel="manifest" href="manifest.json">
+    
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#223344">
+    
+    <link rel="shortcut icon" href="images/favicon.ico" >
+    <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="images/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-194x194.png" sizes="194x194">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
+    
+
+    
+  
+      
+    
+  
+
+
+    
+    
+    
+    
+    
+    <script>
+      // Check if script is being ran from Iframe within data.gov.sg.
+      // This prevents dobule counting in Google Analytics tracking when page views are
+      // triggered twice due to embedding of iframe. This allows us to continue tracking
+      // users who are properly embedding the charts.
+      nodeName = window.frameElement ? window.frameElement.nodeName : 'default'
+      if (!(window.location.hostname.indexOf("data.gov.sg") > -1 && nodeName == "IFRAME")) {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-64941664-1', 'auto');
+        ga('send', 'pageview');
+
+        window.onload = function () {
+          //track resource downloads
+          document.body.addEventListener('click', function(event) {
+            var element = findElWithClass(event);
+            if (element !== null && typeof element.className == "string"){
+              var classes = element.className.split(' ');
+              for (var event_type in ga_events) {
+                if (classes.indexOf(event_type) > -1 ) {
+                  var eventCategory = ga_events[event_type].eventCategory;
+                  var eventAction = ga_events[event_type].eventAction;
+                  var eventLabel = element.getAttribute("data-ga") + ": " + window.location.href;
+
+                  if (event_type == "ga-dataset-download") {
+                    eventLabel = element.getAttribute("data-ga");
+                  }
+                  ga('send', 'event', eventCategory, eventAction, eventLabel);
+                }
+              }
+            }
+          });
+        };
+      }
+
+      function findElWithClass(el) {
+        if (el.target) {
+          el = el.target;
+          while (el) {
+            if (typeof el.className == "string"){
+              var classes = el.className.split(' ');
+              for (var event_type in ga_events) {
+                if (classes.indexOf(event_type) > -1 ) {
+                  return el;
+                }
+              }
+            }
+            el = el.parentNode;
+          }
+          return null;
+        }
+      }
+    </script>
+    
+    
+
+  </head>
+  
+
+  
+  <body>
+
+    
+    
+    <nav class="site-nav">
+      <div class="container">
+        <a href="index.html">
+          <img class="site-logo"
+               src="images/logo.svg"
+               alt="Data.gov.sg"
+               title="Data.gov.sg"/>
+        </a>
+        <a href="index.html" class="site-title">Data.gov.sg</a>
+        <div class="flex-spacer"></div>
+
+        
+        <a class="site-link ga-nav-topic-dropdown" data-toggle="collapse" href=".html">Topics<span class="caret"></span></a>
+        
+
+
+        <a class="site-link ga-nav-blog" href='https://blog.data.gov.sg/'>Blog</a>
+        <a class="site-link ga-nav-developers" href='developer.html'>Developers</a>
+        <a class="site-link ga-nav-request" href='https://github.com/datagovsg/datagovsg-datasets/issues/new?title=Dataset%20request:%20%3Cdataset%20title%3E'>Data Request</a>
+
+      </div>
+    </nav>
+    
+
+    
+    <div class="collapse topic-collapse">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Economy
+               href="group/economy.html">
+              <img class="hover-on" src=images/group_icons/active/economy.svg>
+              <img class="hover-off" src=images/group_icons/inactive/economy.svg>
+              <h5 class="topic-title"><small>Economy</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Education
+               href="group/education.html">
+              <img class="hover-on" src=images/group_icons/active/education.svg>
+              <img class="hover-off" src=images/group_icons/inactive/education.svg>
+              <h5 class="topic-title"><small>Education</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Environment
+               href="group/environment.html">
+              <img class="hover-on" src=images/group_icons/active/environment.svg>
+              <img class="hover-off" src=images/group_icons/inactive/environment.svg>
+              <h5 class="topic-title"><small>Environment</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Finance
+               href="group/finance.html">
+              <img class="hover-on" src=images/group_icons/active/finance.svg>
+              <img class="hover-off" src=images/group_icons/inactive/finance.svg>
+              <h5 class="topic-title"><small>Finance</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Health
+               href="group/health.html">
+              <img class="hover-on" src=images/group_icons/active/health.svg>
+              <img class="hover-off" src=images/group_icons/inactive/health.svg>
+              <h5 class="topic-title"><small>Health</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Infrastructure
+               href="group/infrastructure.html">
+              <img class="hover-on" src=images/group_icons/active/infrastructure.svg>
+              <img class="hover-off" src=images/group_icons/inactive/infrastructure.svg>
+              <h5 class="topic-title"><small>Infrastructure</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Society
+               href="group/society.html">
+              <img class="hover-on" src=images/group_icons/active/society.svg>
+              <img class="hover-off" src=images/group_icons/inactive/society.svg>
+              <h5 class="topic-title"><small>Society</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Technology
+               href="group/technology.html">
+              <img class="hover-on" src=images/group_icons/active/technology.svg>
+              <img class="hover-off" src=images/group_icons/inactive/technology.svg>
+              <h5 class="topic-title"><small>Technology</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Transport
+               href="group/transport.html">
+              <img class="hover-on" src=images/group_icons/active/transport.svg>
+              <img class="hover-off" src=images/group_icons/inactive/transport.svg>
+              <h5 class="topic-title"><small>Transport</small></h5>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+<div class="container search-header">
+  <div class="whitespace"></div>
+  <section class="content">
+    
+    <a class="search-download-list ga-download-dataset-list" href="dataset/dataset-listing.html">
+      <img class="button-icon" src='images/icons/Download.svg'/>
+      Dataset List
+    </a>
+
+    
+
+<form class="search-box " action="https://data.gov.sg/search" method="get">
+
+  
+  
+
+  
+  <input class="search-box-text ga-search-bar "
+         type="text"
+         name="q"
+         value=""
+         autocomplete="off"
+         
+         placeholder="e.g. consumer price index, crime rate, hdb"
+         />
+
+  
+  <button type="submit">
+    <img src="images/icons/Search.svg">
+  </button>
+
+</form>
+  </section>
+</div>
+
+
+
+    
+    
+    <main class="site-main">
+      
+
+
+<div class="container search-main">
+
+  <div class="search-container-left">
+    <section class="search-filters">
+      
+      
+      <div class="search-filter">
+        <h2 class="section-title filter-title">Topics</h2>
+        <div class="search-topics-list">
+          
+            
+            
+            <a class="ga-topic-filters" data-ga=Economy href="searchf331.html?groups=economy">
+              <div class="search-topic ">
+                <img class="select-on hover-on" src=images/group_icons/selected/economy.svg height="30px"/>
+                <img class="select-off hover-off" src=images/group_icons/inactive/economy.svg height="30px" >
+                Economy
+              </div>
+            </a>
+          
+            
+            
+            <a class="ga-topic-filters" data-ga=Education href="searche286.html?groups=education">
+              <div class="search-topic ">
+                <img class="select-on hover-on" src=images/group_icons/selected/education.svg height="30px"/>
+                <img class="select-off hover-off" src=images/group_icons/inactive/education.svg height="30px" >
+                Education
+              </div>
+            </a>
+          
+            
+            
+            <a class="ga-topic-filters" data-ga=Environment href="search2e0f.html?groups=environment">
+              <div class="search-topic ">
+                <img class="select-on hover-on" src=images/group_icons/selected/environment.svg height="30px"/>
+                <img class="select-off hover-off" src=images/group_icons/inactive/environment.svg height="30px" >
+                Environment
+              </div>
+            </a>
+          
+            
+            
+            <a class="ga-topic-filters" data-ga=Finance href="searchd2fb.html?groups=finance">
+              <div class="search-topic ">
+                <img class="select-on hover-on" src=images/group_icons/selected/finance.svg height="30px"/>
+                <img class="select-off hover-off" src=images/group_icons/inactive/finance.svg height="30px" >
+                Finance
+              </div>
+            </a>
+          
+            
+            
+            <a class="ga-topic-filters" data-ga=Health href="search0d6a.html?groups=health">
+              <div class="search-topic ">
+                <img class="select-on hover-on" src=images/group_icons/selected/health.svg height="30px"/>
+                <img class="select-off hover-off" src=images/group_icons/inactive/health.svg height="30px" >
+                Health
+              </div>
+            </a>
+          
+            
+            
+            <a class="ga-topic-filters" data-ga=Infrastructure href="search9964.html?groups=infrastructure">
+              <div class="search-topic ">
+                <img class="select-on hover-on" src=images/group_icons/selected/infrastructure.svg height="30px"/>
+                <img class="select-off hover-off" src=images/group_icons/inactive/infrastructure.svg height="30px" >
+                Infrastructure
+              </div>
+            </a>
+          
+            
+            
+            <a class="ga-topic-filters" data-ga=Society href="search50d7.html?groups=society">
+              <div class="search-topic ">
+                <img class="select-on hover-on" src=images/group_icons/selected/society.svg height="30px"/>
+                <img class="select-off hover-off" src=images/group_icons/inactive/society.svg height="30px" >
+                Society
+              </div>
+            </a>
+          
+            
+            
+            <a class="ga-topic-filters" data-ga=Technology href="search37df.html?groups=technology">
+              <div class="search-topic ">
+                <img class="select-on hover-on" src=images/group_icons/selected/technology.svg height="30px"/>
+                <img class="select-off hover-off" src=images/group_icons/inactive/technology.svg height="30px" >
+                Technology
+              </div>
+            </a>
+          
+            
+            
+            <a class="ga-topic-filters" data-ga=Transport href="search66fc.html?groups=transport">
+              <div class="search-topic ">
+                <img class="select-on hover-on" src=images/group_icons/selected/transport.svg height="30px"/>
+                <img class="select-off hover-off" src=images/group_icons/inactive/transport.svg height="30px" >
+                Transport
+              </div>
+            </a>
+          
+        </div>
+        <select class="search-filter-select search-topics-dropdown">
+          <option value="/search">
+          Select one
+          </option>
+          
+          
+          <option value="/search?groups=economy"
+                  >
+            Economy
+          </option>
+          
+          
+          <option value="/search?groups=education"
+                  >
+            Education
+          </option>
+          
+          
+          <option value="/search?groups=environment"
+                  >
+            Environment
+          </option>
+          
+          
+          <option value="/search?groups=finance"
+                  >
+            Finance
+          </option>
+          
+          
+          <option value="/search?groups=health"
+                  >
+            Health
+          </option>
+          
+          
+          <option value="/search?groups=infrastructure"
+                  >
+            Infrastructure
+          </option>
+          
+          
+          <option value="/search?groups=society"
+                  >
+            Society
+          </option>
+          
+          
+          <option value="/search?groups=technology"
+                  >
+            Technology
+          </option>
+          
+          
+          <option value="/search?groups=transport"
+                  >
+            Transport
+          </option>
+          
+        </select>
+      </div>
+
+      
+      <div class="search-filter">
+        <h2 class="section-title filter-title">File format</h2>
+        <select class="search-filter-select ga-file-format-filter">
+          <option value="/search">
+          Select one
+          </option>
+          
+          
+          <option value="/search?res_format=CSV"
+                  >
+            CSV
+          </option>
+          
+          
+          <option value="/search?res_format=PDF"
+                  >
+            PDF
+          </option>
+          
+          
+          <option value="/search?res_format=KML"
+                  >
+            KML
+          </option>
+          
+          
+          <option value="/search?res_format=SHP"
+                  >
+            SHP
+          </option>
+          
+          
+          <option value="/search?res_format=API"
+                  >
+            API
+          </option>
+          
+        </select>
+      </div>
+
+      
+      
+      <div class="search-filter">
+        <h2 class="section-title filter-title">Agency</h2>
+        <select class="search-filter-select ga-org-filter">
+          <option value="/search">
+          Select one
+          </option>
+          
+          
+          <option value="/search?organization=accounting-and-corporate-regulatory-authority"
+                  >
+            Accounting and Corporate Regulatory Authority
+          </option>
+          
+          
+          <option value="/search?organization=agency-for-science-technology-and-research"
+                  >
+            Agency For Science, Technology and Research
+          </option>
+          
+          
+          <option value="/search?organization=attorney-generals-chambers"
+                  >
+            Attorney-General&#39;s Chambers
+          </option>
+          
+          
+          <option value="/search?organization=auditor-generals-office"
+                  >
+            Auditor-General&#39;s Office
+          </option>
+          
+          
+          <option value="/search?organization=board-of-architects"
+                  >
+            Board of Architects
+          </option>
+          
+          
+          <option value="/search?organization=building-and-construction-authority"
+                  >
+            Building and Construction Authority
+          </option>
+          
+          
+          <option value="/search?organization=casino-regulatory-authority"
+                  >
+            Casino Regulatory Authority
+          </option>
+          
+          
+          <option value="/search?organization=central-provident-fund-board"
+                  >
+            Central Provident Fund Board
+          </option>
+          
+          
+          <option value="/search?organization=civil-aviation-authority-of-singapore"
+                  >
+            Civil Aviation Authority of Singapore
+          </option>
+          
+          
+          <option value="/search?organization=civil-service-college"
+                  >
+            Civil Service College
+          </option>
+          
+          
+          <option value="/search?organization=competition-commission-of-singapore"
+                  >
+            Competition Commission of Singapore
+          </option>
+          
+          
+          <option value="/search?organization=corrupt-practices-investigation-bureau"
+                  >
+            Corrupt Practices Investigation Bureau
+          </option>
+          
+          
+          <option value="/search?organization=council-for-estate-agencies"
+                  >
+            Council For Estate Agencies
+          </option>
+          
+          
+          <option value="/search?organization=defence-science-technology-agency"
+                  >
+            Defence Science &amp; Technology Agency
+          </option>
+          
+          
+          <option value="/search?organization=early-childhood-development-agency"
+                  >
+            Early Childhood Development Agency
+          </option>
+          
+          
+          <option value="/search?organization=economic-development-board"
+                  >
+            Economic Development Board
+          </option>
+          
+          
+          <option value="/search?organization=energy-market-authority"
+                  >
+            Energy Market Authority
+          </option>
+          
+          
+          <option value="/search?organization=family-physicians-accreditation-board"
+                  >
+            Family Physicians Accreditation Board
+          </option>
+          
+          
+          <option value="/search?organization=govtech"
+                  >
+            GovTech
+          </option>
+          
+          
+          <option value="/search?organization=health-promotion-board"
+                  >
+            Health Promotion Board
+          </option>
+          
+          
+          <option value="/search?organization=health-sciences-authority"
+                  >
+            Health Sciences Authority
+          </option>
+          
+          
+          <option value="/search?organization=hindu-endowments-board"
+                  >
+            Hindu Endowments Board
+          </option>
+          
+          
+          <option value="/search?organization=home-team-academy"
+                  >
+            Home Team Academy 
+          </option>
+          
+          
+          <option value="/search?organization=hotels-licensing-board"
+                  >
+            Hotels Licensing Board
+          </option>
+          
+          
+          <option value="/search?organization=housing-and-development-board"
+                  >
+            Housing and Development Board
+          </option>
+          
+          
+          <option value="/search?organization=industrial-arbitration-court"
+                  >
+            Industrial Arbitration Court
+          </option>
+          
+          
+          <option value="/search?organization=infocomm-media-development-authority"
+                  >
+            Infocomm Media Development Authority
+          </option>
+          
+          
+          <option value="/search?organization=inland-revenue-authority-of-singapore"
+                  >
+            Inland Revenue Authority of Singapore
+          </option>
+          
+          
+          <option value="/search?organization=ipto"
+                  >
+            Insolvency Office, Public Trustee&#39;S Office And Registries Of Moneylenders &amp; Pawnbrokers
+          </option>
+          
+          
+          <option value="/search?organization=institute-of-southeast-asian-studies"
+                  >
+            Institute of Southeast Asian Studies
+          </option>
+          
+          
+          <option value="/search?organization=institute-of-technical-education"
+                  >
+            Institute of Technical Education
+          </option>
+          
+          
+          <option value="/search?organization=intellectual-property-office-of-singapore"
+                  >
+            Intellectual Property Office of Singapore
+          </option>
+          
+          
+          <option value="/search?organization=international-enterprise-singapore"
+                  >
+            International Enterprise Singapore
+          </option>
+          
+          
+          <option value="/search?organization=istana"
+                  >
+            Istana
+          </option>
+          
+          
+          <option value="/search?organization=jtc-corporation"
+                  >
+            JTC Corporation
+          </option>
+          
+          
+          <option value="/search?organization=judiciary-state-courts"
+                  >
+            Judiciary, State Courts
+          </option>
+          
+          
+          <option value="/search?organization=judiciary-supreme-court"
+                  >
+            Judiciary, Supreme Court
+          </option>
+          
+          
+          <option value="/search?organization=land-transport-authority"
+                  >
+            Land Transport Authority
+          </option>
+          
+          
+          <option value="/search?organization=majlis-ugama-islam-singapura"
+                  >
+            Majlis Ugama Islam Singapura
+          </option>
+          
+          
+          <option value="/search?organization=maritime-and-port-authority-of-singapore"
+                  >
+            Maritime and Port Authority of Singapore
+          </option>
+          
+          
+          <option value="/search?organization=meteorological-services-division"
+                  >
+            Meteorological Services Division
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-communications-and-information"
+                  >
+            Ministry of Communications and Information
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-culture-community-and-youth"
+                  >
+            Ministry of Culture, Community and Youth
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-defence"
+                  >
+            Ministry of Defence
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-education"
+                  >
+            Ministry of Education
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-finance"
+                  >
+            Ministry of Finance
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-finance-accountant-generals-department"
+                  >
+            Ministry of Finance - Accountant-General&#39;s Department
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-finance-singapore-customs"
+                  >
+            Ministry of Finance - Singapore Customs
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-foreign-affairs"
+                  >
+            Ministry of Foreign Affairs
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-health"
+                  >
+            Ministry of Health
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-home-affairs"
+                  >
+            Ministry of Home Affairs
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-home-affairs-central-narcotics-bureau"
+                  >
+            Ministry of Home Affairs - Central Narcotics Bureau
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-home-affairs-immigration-checkpoints-authority"
+                  >
+            Ministry of Home Affairs - Immigration &amp; Checkpoints Authority
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-home-affairs-singapore-civil-defence-force"
+                  >
+            Ministry of Home Affairs - Singapore Civil Defence Force
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-home-affairs-singapore-police-force"
+                  >
+            Ministry of Home Affairs - Singapore Police Force
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-home-affairs-singapore-prison-service"
+                  >
+            Ministry of Home Affairs - Singapore Prison Service
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-law"
+                  >
+            Ministry of Law
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-manpower"
+                  >
+            Ministry of Manpower
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-national-development"
+                  >
+            Ministry of National Development
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-social-and-family-development"
+                  >
+            Ministry of Social and Family Development
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-the-environment-and-water-resources"
+                  >
+            Ministry of the Environment and Water Resources
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-trade-and-industry"
+                  >
+            Ministry of Trade and Industry
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-trade-and-industry-department-of-statistics"
+                  >
+            Ministry of Trade and Industry - Department of Statistics
+          </option>
+          
+          
+          <option value="/search?organization=ministry-of-transport"
+                  >
+            Ministry of Transport
+          </option>
+          
+          
+          <option value="/search?organization=monetary-authority-of-singapore"
+                  >
+            Monetary Authority of Singapore
+          </option>
+          
+          
+          <option value="/search?organization=nanyang-polytechnic"
+                  >
+            Nanyang Polytechnic
+          </option>
+          
+          
+          <option value="/search?organization=national-arts-council"
+                  >
+            National Arts Council
+          </option>
+          
+          
+          <option value="/search?organization=national-council-of-social-service"
+                  >
+            National Council of Social Service
+          </option>
+          
+          
+          <option value="/search?organization=national-environment-agency"
+                  >
+            National Environment Agency
+          </option>
+          
+          
+          <option value="/search?organization=national-heritage-board"
+                  >
+            National Heritage Board
+          </option>
+          
+          
+          <option value="/search?organization=national-library-board"
+                  >
+            National Library Board
+          </option>
+          
+          
+          <option value="/search?organization=national-parks-board"
+                  >
+            National Parks Board
+          </option>
+          
+          
+          <option value="/search?organization=national-parks-board-animal-and-veterinary-services"
+                  >
+            National Parks Board/Animal and Veterinary Services
+          </option>
+          
+          
+          <option value="/search?organization=national-research-foundation"
+                  >
+            National Research Foundation
+          </option>
+          
+          
+          <option value="/search?organization=national-security-co-ordination-secretariat"
+                  >
+            National Security Co-ordination Secretariat
+          </option>
+          
+          
+          <option value="/search?organization=ngee-ann-polytechnic"
+                  >
+            Ngee Ann Polytechnic
+          </option>
+          
+          
+          <option value="/search?organization=parliament-of-singapore"
+                  >
+            Parliament of Singapore
+          </option>
+          
+          
+          <option value="/search?organization=peoples-association"
+                  >
+            People&#39;s Association
+          </option>
+          
+          
+          <option value="/search?organization=personal-data-protection-commission"
+                  >
+            Personal Data Protection Commission
+          </option>
+          
+          
+          <option value="/search?organization=prime-ministers-office"
+                  >
+            Prime Minister&#39;s Office
+          </option>
+          
+          
+          <option value="/search?organization=prime-ministers-office-elections-department"
+                  >
+            Prime Minister&#39;s Office - Elections Department
+          </option>
+          
+          
+          <option value="/search?organization=prime-ministers-office-national-population-and-talent-division"
+                  >
+            Prime Minister&#39;s Office - National Population and Talent Division
+          </option>
+          
+          
+          <option value="/search?organization=professional-engineers-board-singapore"
+                  >
+            Professional Engineers Board, Singapore
+          </option>
+          
+          
+          <option value="/search?organization=public-service-commission"
+                  >
+            Public Service Commission
+          </option>
+          
+          
+          <option value="/search?organization=public-service-division"
+                  >
+            Public Service Division
+          </option>
+          
+          
+          <option value="/search?organization=public-transport-council"
+                  >
+            Public Transport Council
+          </option>
+          
+          
+          <option value="/search?organization=pub-singapores-national-water-agency"
+                  >
+            PUB, Singapore&#39;s national water agency
+          </option>
+          
+          
+          <option value="/search?organization=republic-polytechnic"
+                  >
+            Republic Polytechnic
+          </option>
+          
+          
+          <option value="/search?organization=science-centre-board"
+                  >
+            Science Centre Board
+          </option>
+          
+          
+          <option value="/search?organization=sentosa-development-corporation"
+                  >
+            Sentosa Development Corporation
+          </option>
+          
+          
+          <option value="/search?organization=score"
+                  >
+            Singapore Corporation of Rehabilitative Enterprises
+          </option>
+          
+          
+          <option value="/search?organization=singapore-dental-council"
+                  >
+            Singapore Dental Council
+          </option>
+          
+          
+          <option value="/search?organization=singapore-examinations-and-assessment-board"
+                  >
+            Singapore Examinations and Assessment Board
+          </option>
+          
+          
+          <option value="/search?organization=singapore-food-agency"
+                  >
+            Singapore Food Agency
+          </option>
+          
+          
+          <option value="/search?organization=singapore-labour-foundation"
+                  >
+            Singapore Labour Foundation
+          </option>
+          
+          
+          <option value="/search?organization=singapore-land-authority"
+                  >
+            Singapore Land Authority
+          </option>
+          
+          
+          <option value="/search?organization=singapore-medical-council"
+                  >
+            Singapore Medical Council
+          </option>
+          
+          
+          <option value="/search?organization=singapore-nursing-board"
+                  >
+            Singapore Nursing Board
+          </option>
+          
+          
+          <option value="/search?organization=singapore-pharmacy-council"
+                  >
+            Singapore Pharmacy Council
+          </option>
+          
+          
+          <option value="/search?organization=singapore-polytechnic"
+                  >
+            Singapore Polytechnic
+          </option>
+          
+          
+          <option value="/search?organization=singapore-totalisator-board"
+                  >
+            Singapore Totalisator Board
+          </option>
+          
+          
+          <option value="/search?organization=singapore-tourism-board"
+                  >
+            Singapore Tourism Board
+          </option>
+          
+          
+          <option value="/search?organization=singapore-workforce-development-agency"
+                  >
+            Singapore Workforce Development Agency
+          </option>
+          
+          
+          <option value="/search?organization=skillsfuture-singapore"
+                  >
+            SkillsFuture Singapore
+          </option>
+          
+          
+          <option value="/search?organization=sport-singapore"
+                  >
+            Sport Singapore
+          </option>
+          
+          
+          <option value="/search?organization=spring-singapore"
+                  >
+            Spring Singapore
+          </option>
+          
+          
+          <option value="/search?organization=temasek-polytechnic"
+                  >
+            Temasek Polytechnic
+          </option>
+          
+          
+          <option value="/search?organization=the-cabinet"
+                  >
+            The Cabinet
+          </option>
+          
+          
+          <option value="/search?organization=traditional-chinese-medicine-practitioners-board"
+                  >
+            Traditional Chinese Medicine Practitioners Board
+          </option>
+          
+          
+          <option value="/search?organization=urban-redevelopment-authority"
+                  >
+            Urban Redevelopment Authority
+          </option>
+          
+          
+          <option value="/search?organization=vital-org"
+                  >
+            VITAL.Org
+          </option>
+          
+        </select>
+      </div>
+
+      <div class="search-filter filter-sort">
+        <h2 class="section-title filter-title">Sort by </h2>
+        
+
+
+
+<select class="search-filter-select ga-search-sortby">
+  
+  
+  
+  <option value="/search?sort=score+desc%2C+metadata_modified+desc"
+          
+          selected='selected'
+          >
+    Relevance
+  </option>
+  
+  
+  <option value="/search?sort=title_string+asc"
+          >
+    Name Ascending
+  </option>
+  
+  
+  <option value="/search?sort=title_string+desc"
+          >
+    Name Descending
+  </option>
+  
+  
+  <option value="/search?sort=metadata_modified+desc"
+          >
+    Last Modified
+  </option>
+  
+</select>
+      </div>
+    </section>
+  </div>
+
+  
+  <div class="search-container-right">
+    <section class="search-results">
+      <div class="search-results-header">
+        <h2 class="section-title">
+          
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+1,883  datasets found
+        </h2>
+
+        <div class="search-filter">
+          <span class="section-title filter-title">Sort by: </span>
+          
+
+
+
+<select class="search-filter-select ga-search-sortby">
+  
+  
+  
+  <option value="/search?sort=score+desc%2C+metadata_modified+desc"
+          
+          selected='selected'
+          >
+    Relevance
+  </option>
+  
+  
+  <option value="/search?sort=title_string+asc"
+          >
+    Name Ascending
+  </option>
+  
+  
+  <option value="/search?sort=title_string+desc"
+          >
+    Name Descending
+  </option>
+  
+  
+  <option value="/search?sort=metadata_modified+desc"
+          >
+    Last Modified
+  </option>
+  
+</select>
+        </div>
+      </div>
+        <div class="row">
+          
+            
+            <div class="col-12">
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=704f9649-8037-4070-9832-64c1fc2b3852 href="dataset/live-birth-by-ethnic-group-of-father-and-child-gender.html">
+      Live-Births By Ethnic Group Of Father And Child Gender
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=ministry-of-home-affairs-immigration-checkpoints-authority
+      href="dataset0dc8.html?organization=ministry-of-home-affairs-immigration-checkpoints-authority">
+      Ministry of Home Affairs - Immigration &amp; Checkpoints Authority
+    </a>
+    
+    /
+    11 Nov 2020
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Published in Report on Registration of Births and Deaths which aims to provide an overview on the annual changes in population, births and deaths.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/CSV.svg/index.html>
+  
+</div>
+
+</article>
+            </div>
+            
+            <div class="col-12">
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=1ae675b8-8262-4737-8d3c-7b824caa24e8 href="dataset/still-births-by-birth-weight-age-group-of-mother-and-child-gender.html">
+      Still-Births by Birth Weight, Age Group of Mother, Period of Gestation and Child Gender
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=ministry-of-home-affairs-immigration-checkpoints-authority
+      href="dataset0dc8.html?organization=ministry-of-home-affairs-immigration-checkpoints-authority">
+      Ministry of Home Affairs - Immigration &amp; Checkpoints Authority
+    </a>
+    
+    /
+    11 Nov 2020
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Published in the Report on Registration of Births and Deaths, which aims to provide an overview on the annual changes in population, births and deaths.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/CSV.svg/index.html>
+  
+</div>
+
+</article>
+            </div>
+            
+            <div class="col-12">
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=dba9594b-fb5c-41c5-bb7c-92860ee31aeb href="dataset/dataset-listing.html">
+      Data.gov.sg Dataset Listing
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=govtech
+      href="datasetf89d.html?organization=govtech">
+      GovTech
+    </a>
+    
+    /
+    11 Nov 2020
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">This dataset contains a listing of all datasets provided on Data.gov.sg.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/CSV.svg/index.html>
+  
+</div>
+
+</article>
+            </div>
+            
+            <div class="col-12">
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=e7536645-6126-4358-b959-a02b22c6c473 href="dataset/dengue-clusters.html">
+      Dengue Clusters
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=national-environment-agency
+      href="dataset5efb.html?organization=national-environment-agency">
+      National Environment Agency
+    </a>
+    
+    /
+    11 Nov 2020
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Location of dengue cluster</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/KML.svg/index.html>
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/GEOJSON.svg/index.html>
+  
+</div>
+
+</article>
+            </div>
+            
+            <div class="col-12">
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=91508e0b-3a36-4a0d-aeb4-d62a0071f65e href="dataset/dengue-cases-south-west.html">
+      Dengue (Cases) - South West
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=national-environment-agency
+      href="dataset5efb.html?organization=national-environment-agency">
+      National Environment Agency
+    </a>
+    
+    /
+    11 Nov 2020
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Dengue cases in southwest region.
+Based on notified dengue cases and mosquito breeding habitats detected in the last 14 days. Information on dengue cases is provisional and is subject to changes due to epidemiological investigation findings.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/KML.svg/index.html>
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/GEOJSON.svg/index.html>
+  
+</div>
+
+</article>
+            </div>
+            
+            <div class="col-12">
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=e4e20dd2-d5ca-48df-9400-7b97b7b982fa href="dataset/dengue-cases-south-east.html">
+      Dengue (Cases) - South East
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=national-environment-agency
+      href="dataset5efb.html?organization=national-environment-agency">
+      National Environment Agency
+    </a>
+    
+    /
+    11 Nov 2020
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Dengue cases in southeast region.
+Based on notified dengue cases and mosquito breeding habitats detected in the last 14 days. Information on dengue cases is provisional and is subject to changes due to epidemiological investigation findings.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/KML.svg/index.html>
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/GEOJSON.svg/index.html>
+  
+</div>
+
+</article>
+            </div>
+            
+            <div class="col-12">
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=9efcc45e-4f59-4465-b6f5-d5791f70ca56 href="dataset/dengue-cases-north-east.html">
+      Dengue (Cases) - North East
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=national-environment-agency
+      href="dataset5efb.html?organization=national-environment-agency">
+      National Environment Agency
+    </a>
+    
+    /
+    11 Nov 2020
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Dengue cases in north east region.
+Based on notified dengue cases and mosquito breeding habitats detected in the last 14 days. Information on dengue cases is provisional and is subject to changes due to epidemiological investigation findings.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/KML.svg/index.html>
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/GEOJSON.svg/index.html>
+  
+</div>
+
+</article>
+            </div>
+            
+            <div class="col-12">
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=65de6fb8-693e-4cc1-b608-db8a2d8244ea href="dataset/dengue-cases-central.html">
+      Dengue (Cases) - Central
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=national-environment-agency
+      href="dataset5efb.html?organization=national-environment-agency">
+      National Environment Agency
+    </a>
+    
+    /
+    11 Nov 2020
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Dengue Cases in central region.
+Based on notified dengue cases and mosquito breeding habitats detected in the last 14 days. Information on dengue cases is provisional and is subject to changes due to epidemiological investigation findings.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/KML.svg/index.html>
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/GEOJSON.svg/index.html>
+  
+</div>
+
+</article>
+            </div>
+            
+            <div class="col-12">
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=8f357dd4-96f6-4957-8a68-41b28e5e3f2f href="dataset/cea-salesperson-info.html">
+      CEA Salesperson Information
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=council-for-estate-agencies
+      href="dataset3856.html?organization=council-for-estate-agencies">
+      Council For Estate Agencies
+    </a>
+    
+    /
+    11 Nov 2020
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Listing of 'Active' salesperson that is currently registered under CEA. Data is updated 3 times a day.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/CSV.svg/index.html>
+  
+</div>
+
+</article>
+            </div>
+            
+            <div class="col-12">
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=5508e7e3-6caf-4fd9-8a5f-fed95ab5fbdc href="dataset/islandwide-persons-arrested-for-selected-major-offences.html">
+      Persons Arrested for  Selected Major Offences
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=ministry-of-home-affairs-singapore-police-force
+      href="dataset8852.html?organization=ministry-of-home-affairs-singapore-police-force">
+      Ministry of Home Affairs - Singapore Police Force
+    </a>
+    
+    /
+    11 Nov 2020
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Note: Figures are based on Annual Statistical Reports on Crime in Singapore. </p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/CSV.svg/index.html>
+  
+</div>
+
+</article>
+            </div>
+            
+            <div class="col-12">
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=936d866b-e489-43f4-8167-c338ee9a3541 href="dataset/inter-ethnic-marriages-under-administration-muslim-law-act-ethnic-group-brides-grooms-annual.html">
+      Inter-Ethnic Marriages under the Administration of Muslim Law Act by Ethnic Group of Brides and Grooms, Annual
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=ministry-of-trade-and-industry-department-of-statistics
+      href="dataset25ab.html?organization=ministry-of-trade-and-industry-department-of-statistics">
+      Ministry of Trade and Industry - Department of Statistics
+    </a>
+    
+    /
+    11 Nov 2020
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Statistics on marriages registered under the Administration of Muslim Law Act are obtained from records maintained by the Registry of Muslim Marriages.
+"Inter-ethnic" marriages refer to marriages where both the groom and bride are of different ethnicity. E.g. Malay-Indian, Malay-Chinese, Indian-Others
+Total may include marriages with attribute(s) not reported. </p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/CSV.svg/index.html>
+  
+</div>
+
+</article>
+            </div>
+            
+            <div class="col-12">
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=bd7190f1-bef9-4549-a2f9-0e964d0810d3 href="dataset/first-marriages-couples-under-women-s-charter-educational-qualification-brides-grooms-annual.html">
+      First Marriages for Couples under the Women&#39;s Charter by Educational Qualification of Brides and Grooms, Annual
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=ministry-of-trade-and-industry-department-of-statistics
+      href="dataset25ab.html?organization=ministry-of-trade-and-industry-department-of-statistics">
+      Ministry of Trade and Industry - Department of Statistics
+    </a>
+    
+    /
+    11 Nov 2020
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Statistics on marriages registered under the Women’s Charter are obtained from records maintained by the Registry of Marriages. They include all civil marriages solemnized by the Registrar of Marriages, pastors of churches, priests of Hindu temples and other registered solemnizers. 
+Data pertain to couples where neither party had previously been married.
+Total may include marriages with attribute(s) not reported. </p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/CSV.svg/index.html>
+  
+</div>
+
+</article>
+            </div>
+            
+            <div class="col-12">
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=9560c90e-692a-433e-9c36-3ded1d103287 href="dataset/exports-of-services-by-major-trading-partner-annual.html">
+      Exports Of Services By Major Trading Partner, Annual
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=ministry-of-trade-and-industry-department-of-statistics
+      href="dataset25ab.html?organization=ministry-of-trade-and-industry-department-of-statistics">
+      Ministry of Trade and Industry - Department of Statistics
+    </a>
+    
+    /
+    11 Nov 2020
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Exports of services is the value
+of cross-border services provided by residents to non-residents. Data are compiled solely from the International Trade in Services Survey. They may be subsequently revised when new data becomes available.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/CSV.svg/index.html>
+  
+</div>
+
+</article>
+            </div>
+            
+            <div class="col-12">
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=bdd69db3-f791-4c84-ad3a-f23fb26a5757 href="dataset/domestic-wholesale-trade-index-2017-100-current-quarterly-sa.html">
+      Domestic Wholesale Trade Index, (2017 = 100), Current, Quarterly, (SA)
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=ministry-of-trade-and-industry-department-of-statistics
+      href="dataset25ab.html?organization=ministry-of-trade-and-industry-department-of-statistics">
+      Ministry of Trade and Industry - Department of Statistics
+    </a>
+    
+    /
+    11 Nov 2020
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">The Wholesale Trade Index (WTI) measures the short-term performance of wholesale trade activities. Data for the compilation of the WTI are sourced from over 700 wholesale establishments covered in the quarterly survey of wholesale trade as well as from administrative records. 
+The indices are presented at both current prices and constant prices. The indices at current prices measure the changes in sales values which can result from changes in both price and quantity. By removing the price effect, the indices at constant prices measure the changes in sales volume.
+The base year for the WTI is 2017.
+The Domestic WTI records wholesale sales in Singapore. </p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/CSV.svg/index.html>
+  
+</div>
+
+</article>
+            </div>
+            
+            <div class="col-12">
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=c237d38f-d174-4cb1-adba-c642892b2875 href="dataset/data-gov-sg-dataset-resident-pop-15-yrs-and-over-by-language-literate-in-age-grp-sex-and-ethnic-2015.html">
+      Resident Population Aged 15 Years and Over by Language Literate In, Age Group, Sex and Ethnic Group, 2015
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=ministry-of-trade-and-industry-department-of-statistics
+      href="dataset25ab.html?organization=ministry-of-trade-and-industry-department-of-statistics">
+      Ministry of Trade and Industry - Department of Statistics
+    </a>
+    
+    /
+    11 Nov 2020
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">From 1995, the General Household Survey (GHS) is conducted in between 2 Population Censuses as a mid-decade mini-Census.
+The General Household Survey (GHS) 2015 is the third in the series of mid-decade national survey. It covers a wide range of topics and provides comprehensive data on Singapore’s population and households in between the population censuses that are conducted once in ten years.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/CSV.svg/index.html>
+  
+</div>
+
+</article>
+            </div>
+            
+            <div class="col-12">
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=9d73603b-a215-443b-b1dd-6f62953ab181 href="dataset/composite-leading-index-quarterly.html">
+      Composite Leading Index, Quarterly
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=ministry-of-trade-and-industry-department-of-statistics
+      href="dataset25ab.html?organization=ministry-of-trade-and-industry-department-of-statistics">
+      Ministry of Trade and Industry - Department of Statistics
+    </a>
+    
+    /
+    11 Nov 2020
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Base Year is 2015 (2015=100)</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/CSV.svg/index.html>
+  
+</div>
+
+</article>
+            </div>
+            
+            <div class="col-12">
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=2d1b1781-b4f8-45c9-8679-bc9150ce1804 href="dataset/cases-recorded-for-selected-major-offences.html">
+      Cases Recorded for Selected Major Offences
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=ministry-of-home-affairs-singapore-police-force
+      href="dataset8852.html?organization=ministry-of-home-affairs-singapore-police-force">
+      Ministry of Home Affairs - Singapore Police Force
+    </a>
+    
+    /
+    11 Nov 2020
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Note: Figures are based on Annual Statistical Reports on Crime in Singapore. </p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/CSV.svg/index.html>
+  
+</div>
+
+</article>
+            </div>
+            
+            <div class="col-12">
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=c886ffe6-4f68-4c7a-b186-30fc599d647b href="dataset/business-expectations-services-sector-employment-next-quarter-weighted-percentages-quarterly.html">
+      Business Expectations For The Services Sector - Employment Forecast For The Next Quarter, Weighted Percentages Of Up, Same, Down, Quarterly
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=ministry-of-trade-and-industry-department-of-statistics
+      href="dataset25ab.html?organization=ministry-of-trade-and-industry-department-of-statistics">
+      Ministry of Trade and Industry - Department of Statistics
+    </a>
+    
+    /
+    11 Nov 2020
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">The data are compiled from the results of the quarterly Business Expectations Survey of the Services Sector. The objective of the survey is to obtain the business outlook for the immediate future of firms in the services sector. The firms’ views are expressed in terms of directional change(i.e. "up", "same" or "down"). 
+These responses are then weighted and aggregated to derive the weighted percentages for "up", "same" or "down" for each industry. The net weighted balance, which is calculated by the differences between the weighted percentages of "ups" and "downs" is used to indicated the likely overall direction of change of a particular industry.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/CSV.svg/index.html>
+  
+</div>
+
+</article>
+            </div>
+            
+            <div class="col-12">
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=a8331cd0-fcd0-49b5-8157-4de003185317 href="dataset/availability-of-selected-consumer-durables-service-quinquennial.html">
+      Availability of Selected Consumer Durables/Service, Quinquennial
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=ministry-of-trade-and-industry-department-of-statistics
+      href="dataset25ab.html?organization=ministry-of-trade-and-industry-department-of-statistics">
+      Ministry of Trade and Industry - Department of Statistics
+    </a>
+    
+    /
+    11 Nov 2020
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">The Singapore Department of Statistics undertakes the Household Expenditure Survey (HES) once in 5 years to collect detailed information from resident households in Singapore. 
+Availability of consumer durables includes items available for use by households irrespective of whether the items are rented, owned by households or obtained from other sources, e.g. car provided by the company. Items available only for work purposes are excluded. Items must be in working condition to be considered. </p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/CSV.svg/index.html>
+  
+</div>
+
+</article>
+            </div>
+            
+            <div class="col-12">
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=26994845-4511-4f97-bdb9-0d1db437e282 href="dataset/annulments-under-the-women-s-charter-by-ethnic-group-of-couple-annual.html">
+      Annulments Under The Women&#39;s Charter By Ethnic Group Of Couple, Annual
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=ministry-of-trade-and-industry-department-of-statistics
+      href="dataset25ab.html?organization=ministry-of-trade-and-industry-department-of-statistics">
+      Ministry of Trade and Industry - Department of Statistics
+    </a>
+    
+    /
+    11 Nov 2020
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Annulments granted under the Women's Charter refer to invalidation of a marriage. Parties whose marriages have been annulled are conferred the status of never having been married to each other. 
+Statistics on annulments under the Women's Charter are obtained from records maintained by the Family Justice Courts. 
+Total may include annulments with attribute(s) not reported.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/CSV.svg/index.html>
+  
+</div>
+
+</article>
+            </div>
+            
+          
+        </div>
+        <div class="text-center">
+          <div class='pagination pagination-centered'><ul> <li class="active"><a href="dataset2679.html?page=1">1</a></li> <li><a href="dataset4658.html?page=2">2</a></li> <li><a href="dataset9ba9.html?page=3">3</a></li> <li class="disabled"><a href="#">...</a></li> <li><a href="dataset7083.html?page=95">95</a></li> <li><a href="dataset4658.html?page=2">»</a></li></ul></div>
+        </div>
+    </section>
+  </div>
+
+</div>
+
+
+
+    </main>
+    
+
+    
+
+    
+    <footer class="site-footer">
+      <div class='container'>
+      
+        <div class="row">
+          <div class="col-xs-12 col-md-7 footer-groups">
+            <div class="attribution-group text-left">
+              <h2>Built by</h2>
+              <br>
+                <a href="https://open.gov.sg/">Open Government Products</a><small class="text-muted"> - A Division of GovTech.</small><br><br>
+              <div><small>Last updated on November 11, 2020</small></div>
+              <small>&copy; 2020 Government of Singapore</small>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3 footer-groups">
+            <h2>Useful Links</h2>
+              <div class="footer-link">
+                <a class="ga-footer-about" href="about.html">About Us</a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-privacy" href="privacy-and-website-terms.html">Privacy &amp; Website Terms</a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-odl" href="open-data-licence.html">Open Data Licence</a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-developer-guide" href="developer.html">Developers</a>
+              </div>
+            </div>
+          <div class="col-xs-12 col-md-2 footer-groups">
+            <h2>Find Us</h2>
+              <div class="footer-link">
+                <a class="ga-footer-email" href="mailto:feedback@data.gov.sg?Subject=[Data.gov.sg] Feedback">
+                <img class="footer-site-icon"
+                  src="images/email_white.png"
+                  title="Email"/>Email
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-facebook" href="https://www.facebook.com/opendatasg/">
+                  <img class="footer-site-icon"
+                  src="images/fb_white.svg"
+                  title="Facebook"/>Facebook
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-twitter" href="https://twitter.com/datagovsg">
+                  <img class="footer-site-icon"
+                  src="images/twitter_white.svg"
+                  title="Twitter"/>Twitter
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-medium" href="https://blog.data.gov.sg/">
+                <img class="footer-site-icon"
+                  src="images/medium_white.svg"
+                  title="Medium"/>Medium
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-github" href="https://github.com/datagovsg">
+                <img class="footer-site-icon"
+                  src="images/github_white.svg"
+                  title="Github"/>Github
+                </a>
+              </div>
+          </div>
+
+
+
+   <!--      <nav class="footer-links">
+
+        </nav>
+ -->
+      
+      </div>
+    </footer>
+    
+
+    
+    
+    <footer class="site-account text-right text-muted">
+      <div class="container">
+        <small>
+          
+          
+          <a href="user/login.html">
+            Log In
+          </a>
+          
+        </small>
+      </div>
+    </footer>
+    
+
+    
+  
+      
+    
+  
+
+  <script>document.getElementsByTagName('html')[0].className += ' js';</script>
+<script type="text/javascript" src="fanstatic/vendor/_version_2020-10-28T11_48_10/jquery.min.js"></script>
+<script type="text/javascript" src="fanstatic/vendor/_version_2020-10-28T11_48_10/_bundle_jed.min.js%3bmoment-with-locales.js%3bselect2/select2.min.js"></script>
+<script type="text/javascript" src="fanstatic/base/_version_2020-10-28T11_48_10/_bundle_plugins/jquery.inherit.min.js%3bplugins/jquery.proxy-all.min.js%3bplugins/jquery.url-helpers.min.js%3bplugins/jquery.date-helpers/jquery.form-warning.min"></script>
+<script type="text/javascript" src="fanstatic/datagovsg-lib/_version_2020-10-28T11_48_10/jquery/jquery.appear.js"></script>
+<script type="text/javascript" src="fanstatic/datagovsg-lib/_version_2020-10-28T11_48_10/jquery/jquery.autocomplete.min.js"></script>
+<script type="text/javascript" src="fanstatic/datagovsg-lib/_version_2020-10-28T11_48_10/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="fanstatic/datagovsg-js/_version_2020-11-09T11_20_30.97/snippets/search-box.min.js"></script>
+<script type="text/javascript" src="fanstatic/datagovsg-js/_version_2020-11-09T11_20_30.97/snippets/ga-events.min.js"></script>
+<script type="text/javascript" src="fanstatic/datagovsg-js/_version_2020-11-09T11_20_30.97/package/search.min.js"></script></body>
+  
+
+
+<!-- Mirrored from data.gov.sg/search by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2020 00:37:48 GMT -->
+</html>

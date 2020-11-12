@@ -1,0 +1,525 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en_GB">
+
+  
+  
+<!-- Mirrored from data.gov.sg/open-data-licence by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2020 00:39:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!--[if lte ie 8]><script type="text/javascript" src="/fanstatic/vendor/:version:2020-10-28T11:48:10/html5.min.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="fanstatic/vendor/_version_2020-10-28T11_48_10/select2/select2.css" />
+<link rel="stylesheet" type="text/css" href="fanstatic/datagovsg-css/_version_2020-11-09T11_20_33.01/_bundle_terms.min.css%3bdatagovsg.min.css" />
+
+
+    <title>
+      Singapore Open Data Licence-Data.gov.sg
+      
+    </title>
+
+    
+    <meta charset="utf-8">
+    <meta name="generator" content="ckan ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no">
+    <meta name="description" content="Singapore&#39;s open data portal">
+    <meta name="theme-color" content="#113355">
+    <meta name="application-name" content="Data.gov.sg">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@datagovsg">
+    <meta name="twitter:title" content="Singapore Open Data Licence-Data.gov.sg
+      ">
+    <meta name="twitter:description" content="Singapore&#39;s open data portal">
+    <meta name="twitter:url" content="open-data-licence.html">
+    <meta name="twitter:image:src" content="images/thumbnail.png">
+    
+    <meta property="og:title" content="Singapore Open Data Licence-Data.gov.sg
+      " />
+    <meta property="og:description" content="Singapore&#39;s open data portal" />
+    <meta property="og:type" content="article" >
+    <meta property="og:url" content="open-data-licence.html" >
+    <meta property="og:image" content="images/thumbnail.png" >
+    <meta property="og:site_name" content="Data.gov.sg" >
+    
+    <meta name="apple-mobile-web-app-title" content="Data.gov.sg">
+    
+    <meta name="msapplication-TileColor" content="#113355">
+    <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+    
+
+    
+    <link rel="manifest" href="manifest.json">
+    
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#223344">
+    
+    <link rel="shortcut icon" href="images/favicon.ico" >
+    <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="images/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-194x194.png" sizes="194x194">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
+    
+
+    
+  
+      
+    
+  
+
+
+    
+    
+    
+    
+    
+    <script>
+      // Check if script is being ran from Iframe within data.gov.sg.
+      // This prevents dobule counting in Google Analytics tracking when page views are
+      // triggered twice due to embedding of iframe. This allows us to continue tracking
+      // users who are properly embedding the charts.
+      nodeName = window.frameElement ? window.frameElement.nodeName : 'default'
+      if (!(window.location.hostname.indexOf("data.gov.sg") > -1 && nodeName == "IFRAME")) {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-64941664-1', 'auto');
+        ga('send', 'pageview');
+
+        window.onload = function () {
+          //track resource downloads
+          document.body.addEventListener('click', function(event) {
+            var element = findElWithClass(event);
+            if (element !== null && typeof element.className == "string"){
+              var classes = element.className.split(' ');
+              for (var event_type in ga_events) {
+                if (classes.indexOf(event_type) > -1 ) {
+                  var eventCategory = ga_events[event_type].eventCategory;
+                  var eventAction = ga_events[event_type].eventAction;
+                  var eventLabel = element.getAttribute("data-ga") + ": " + window.location.href;
+
+                  if (event_type == "ga-dataset-download") {
+                    eventLabel = element.getAttribute("data-ga");
+                  }
+                  ga('send', 'event', eventCategory, eventAction, eventLabel);
+                }
+              }
+            }
+          });
+        };
+      }
+
+      function findElWithClass(el) {
+        if (el.target) {
+          el = el.target;
+          while (el) {
+            if (typeof el.className == "string"){
+              var classes = el.className.split(' ');
+              for (var event_type in ga_events) {
+                if (classes.indexOf(event_type) > -1 ) {
+                  return el;
+                }
+              }
+            }
+            el = el.parentNode;
+          }
+          return null;
+        }
+      }
+    </script>
+    
+    
+
+  </head>
+  
+
+  
+  <body>
+
+    
+    
+    <nav class="site-nav">
+      <div class="container">
+        <a href="index.html">
+          <img class="site-logo"
+               src="images/logo.svg"
+               alt="Data.gov.sg"
+               title="Data.gov.sg"/>
+        </a>
+        <a href="index.html" class="site-title">Data.gov.sg</a>
+        <div class="flex-spacer"></div>
+
+        
+        <a class="site-link ga-nav-topic-dropdown" data-toggle="collapse" href=".html">Topics<span class="caret"></span></a>
+        
+
+
+        <a class="site-link ga-nav-blog" href='https://blog.data.gov.sg/'>Blog</a>
+        <a class="site-link ga-nav-developers" href='developer.html'>Developers</a>
+        <a class="site-link ga-nav-request" href='https://github.com/datagovsg/datagovsg-datasets/issues/new?title=Dataset%20request:%20%3Cdataset%20title%3E'>Data Request</a>
+
+      </div>
+    </nav>
+    
+
+    
+    <div class="collapse topic-collapse">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Economy
+               href="group/economy.html">
+              <img class="hover-on" src=images/group_icons/active/economy.svg>
+              <img class="hover-off" src=images/group_icons/inactive/economy.svg>
+              <h5 class="topic-title"><small>Economy</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Education
+               href="group/education.html">
+              <img class="hover-on" src=images/group_icons/active/education.svg>
+              <img class="hover-off" src=images/group_icons/inactive/education.svg>
+              <h5 class="topic-title"><small>Education</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Environment
+               href="group/environment.html">
+              <img class="hover-on" src=images/group_icons/active/environment.svg>
+              <img class="hover-off" src=images/group_icons/inactive/environment.svg>
+              <h5 class="topic-title"><small>Environment</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Finance
+               href="group/finance.html">
+              <img class="hover-on" src=images/group_icons/active/finance.svg>
+              <img class="hover-off" src=images/group_icons/inactive/finance.svg>
+              <h5 class="topic-title"><small>Finance</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Health
+               href="group/health.html">
+              <img class="hover-on" src=images/group_icons/active/health.svg>
+              <img class="hover-off" src=images/group_icons/inactive/health.svg>
+              <h5 class="topic-title"><small>Health</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Infrastructure
+               href="group/infrastructure.html">
+              <img class="hover-on" src=images/group_icons/active/infrastructure.svg>
+              <img class="hover-off" src=images/group_icons/inactive/infrastructure.svg>
+              <h5 class="topic-title"><small>Infrastructure</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Society
+               href="group/society.html">
+              <img class="hover-on" src=images/group_icons/active/society.svg>
+              <img class="hover-off" src=images/group_icons/inactive/society.svg>
+              <h5 class="topic-title"><small>Society</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Technology
+               href="group/technology.html">
+              <img class="hover-on" src=images/group_icons/active/technology.svg>
+              <img class="hover-off" src=images/group_icons/inactive/technology.svg>
+              <h5 class="topic-title"><small>Technology</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Transport
+               href="group/transport.html">
+              <img class="hover-on" src=images/group_icons/active/transport.svg>
+              <img class="hover-off" src=images/group_icons/inactive/transport.svg>
+              <h5 class="topic-title"><small>Transport</small></h5>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+    <header class="site-header "
+            style="background-image: url()">
+      
+      
+      <h1 class="headline container text-center">
+        Singapore Open Data Licence
+      </h1>
+      
+      
+      <p class="lead container text-center">
+        version 1.0
+      </p>
+      
+      
+    </header>
+    
+
+
+    
+    
+    <main class="site-main">
+      
+<section class="open-data-licence">
+  <div class="container">
+
+    <div class="side-bar">
+      <div class="side-bar-item">
+        <h2>Jump to</h2>
+        <a href='#acceptance'><div class='page-anchor-link'>Acceptance &amp; Grant of License</div></a>
+        <a href='#what-you-can-do'><div class='page-anchor-link'>What You Can Do</div></a>
+        <a href='#additional-conditions'><div class='page-anchor-link'>Additional Conditions</div></a>
+        <a href='#limitations'><div class='page-anchor-link'>Limitations</div></a>
+        <a href='#definitions'><div class='page-anchor-link'>Definitions and Intepretations</div></a>
+        <a href='#about'><div class='page-anchor-link'>About</div></a>
+      </div>
+
+    </div>
+    <div class="main-content">
+      <div class='main-section' id='acceptance'>
+        <div>
+          <h2>Acceptance &amp; Grant of Licence</h2>
+          <p>By Using (as defined below) the datasets on the Relevant Websites, you agree to the terms of this Licence.</p>
+          <p>The Agency grants you a worldwide, perpetual, royalty-free, non-exclusive licence to Use the datasets, subject to the terms of this Licence.</p>
+        </div>
+      </div>          
+      <div class='main-section' id='what-you-can-do'>
+        <div>
+          <h2>What You Can Do:</h2>
+          <ul class="do-list">
+            <li><p class="check">You can use, access, download, copy, distribute, transmit, modify and adapt the datasets, or any derived analyses or applications, whether commercially or non-commercially (“Use”).</p></li>
+            <li><p class="check">You may grant a sub-licence of the datasets if this is necessary to enable users of your application and/or website (“your Sub-Licensees”), to use your application or access your website.</p></li>
+            <li><p class="check">If your Sub-Licensees require additional rights, your application and/or website should direct your Sub-Licensees to obtain the appropriate licence at <a href="index.html">Data.gov.sg</a>.</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class='main-section' id='limitations'>
+        <div>
+          <h2>Limitations</h2>
+          <ul class="dont-list">
+            <li>
+              <p class="cross">This Licence does not grant you any rights over:</p>
+              <ul>
+                <li>
+                  <p>any personal data in the dataset;</p>
+                </li>
+                <li>
+                  <p>third party rights that the Agency is not authorised to license; and</p>
+                </li>
+                <li>
+                  <p>patents, trademarks and design rights.</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="cross">You must not Use the datasets in a way that suggests any official status or that an Agency endorses you or your Use of the datasets.</p>
+            </li>
+            <li>
+              <p class="cross">This Licence does not grant any rights to Downstream Sub-Licensees.</p>
+            </li>
+          </ul>          
+        </div>
+      </div>
+      <div class='main-section' id='additional-conditions'>
+        <div>
+          <h2>Additional Conditions</h2>
+          <p><strong>Attribution:</strong> You must include in your products, applications or websites that Use the datasets, a conspicuous notice acknowledging the source of the datasets and including a link to the most recent version of this Licence. An example notice is provided below:</p>
+          <blockquote>
+            <p><em>[Contains information from {name of dataset} accessed on {date of access of dataset} from {source of data} which is made available under the terms of the Singapore Open Data Licence version 1.0 {URL link to licence}]</em>*</p>
+          </blockquote>
+          <p><strong>Disclaimers:</strong> The datasets are provided on an “as is” and “as available” basis. The Agency makes no representations or warranties in relation to the datasets, including but not limited to any representation or warranty as to the accuracy, completeness, reliability, continued availability, timeliness, non-infringement, title, quality or fitness for any particular purpose of the datasets to the fullest extent permitted by the law.</p>
+          <p>To the extent permitted by law, the Agency shall not be liable to you or any third party whether in contract, tort (including negligence), restitution, breach of statutory duty or otherwise, for damage or loss of any kind arising directly or indirectly from your or any third party’s Use of, or inability to Use, the datasets or the Relevant Websites.</p>
+          <p><strong>Indemnity:</strong> You shall indemnify the Agency against all liabilities, damages, costs (including legal costs) and expenses arising directly or indirectly from:</p>
+          <ul>
+            <li>
+              <p>any claim made by a third party in connection with your Use of the datasets;</p>
+            </li>
+            <li>
+              <p>your violation of any rights of another person; or</p>
+            </li>
+            <li>
+              <p>any claim made by a third party in connection with the third party’s Use of the datasets or any derived analyses or applications which you have provided.</p>
+            </li>
+          </ul>
+          <p><strong>Intellectual Property:</strong> All datasets are the intellectual property of the Agency.</p>
+          <p>You cannot enforce any intellectual property rights belonging to the Agency except with the prior written approval of the Agency.
+          Rights of Third Parties: No one other than a party to this Licence shall have any right to enforce any of its terms.</p>
+          <p><strong>Termination of Licence:</strong> The Agency may terminate this Licence immediately upon your breach of any of the terms of this Licence. The Disclaimers and Indemnity sections, and any other provision of this Licence which is required to give effect to termination or the consequences of such termination, shall survive the termination of this Licence.</p>
+          <p><strong>Governing Law and Jurisdiction:</strong> This Licence is governed by the laws of the Republic of Singapore and the parties to the Licence submit to the exclusive jurisdiction of the Singapore courts.</p>          
+        </div>
+      </div>     
+      <div class='main-section' id='definitions'>
+        <div>
+          <h2>Definitions and Intepretation</h2>
+          <p>In this Licence:</p>
+          <p>“Agency” means the Singapore Government (including its Ministries, departments, and Organs of State) or the Statutory Board providing the dataset, and where the dataset derives its data from multiple Agencies, a reference to “Agency” shall include all the Agencies providing the source data.</p>
+          <p>“Dataset” includes any data, or information within the dataset, that is offered for use under the terms of this Licence.</p>
+          <p>“Downstream Sub-Licensee” means any person who may require a licence in order to access the website or use the application of a Sub-Licensee.</p>
+          <p>“Statutory Board” means a body incorporated by or under written law from time to time to perform or discharge any public function.</p>
+          <p>“Sub-Licensee” means a person that is granted a sub-licence by you, where allowed under this Licence.</p>
+          <p>“Relevant Websites” means this website or other websites owned by an Agency that are linked from this website.</p>          
+        </div>
+      </div>
+      <div class='main-section' id='about'>
+        <div>
+          <h2>About the Singapore Open Data License</h2>
+          <p>The Singapore Open Data Licence aims to promote and enable easy reuse of Public Sector data to create value for the community and businesses.</p>
+          <p>This is version 1.0 of the Singapore Open Data Licence. The Singapore Government may, from time to time, issue new versions of the Singapore Open Data Licence. Your continued Use of the datasets constitutes your acceptance of the new version of this Licence.</p>          
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+
+    </main>
+    
+
+    
+
+    
+    <footer class="site-footer">
+      <div class='container'>
+      
+        <div class="row">
+          <div class="col-xs-12 col-md-7 footer-groups">
+            <div class="attribution-group text-left">
+              <h2>Built by</h2>
+              <br>
+                <a href="https://open.gov.sg/">Open Government Products</a><small class="text-muted"> - A Division of GovTech.</small><br><br>
+              <div><small>Last updated on November 11, 2020</small></div>
+              <small>&copy; 2020 Government of Singapore</small>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3 footer-groups">
+            <h2>Useful Links</h2>
+              <div class="footer-link">
+                <a class="ga-footer-about" href="about.html">About Us</a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-privacy" href="privacy-and-website-terms.html">Privacy &amp; Website Terms</a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-odl" href="open-data-licence.html">Open Data Licence</a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-developer-guide" href="developer.html">Developers</a>
+              </div>
+            </div>
+          <div class="col-xs-12 col-md-2 footer-groups">
+            <h2>Find Us</h2>
+              <div class="footer-link">
+                <a class="ga-footer-email" href="mailto:feedback@data.gov.sg?Subject=[Data.gov.sg] Feedback">
+                <img class="footer-site-icon"
+                  src="images/email_white.png"
+                  title="Email"/>Email
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-facebook" href="https://www.facebook.com/opendatasg/">
+                  <img class="footer-site-icon"
+                  src="images/fb_white.svg"
+                  title="Facebook"/>Facebook
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-twitter" href="https://twitter.com/datagovsg">
+                  <img class="footer-site-icon"
+                  src="images/twitter_white.svg"
+                  title="Twitter"/>Twitter
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-medium" href="https://blog.data.gov.sg/">
+                <img class="footer-site-icon"
+                  src="images/medium_white.svg"
+                  title="Medium"/>Medium
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-github" href="https://github.com/datagovsg">
+                <img class="footer-site-icon"
+                  src="images/github_white.svg"
+                  title="Github"/>Github
+                </a>
+              </div>
+          </div>
+
+
+
+   <!--      <nav class="footer-links">
+
+        </nav>
+ -->
+      
+      </div>
+    </footer>
+    
+
+    
+    
+    <footer class="site-account text-right text-muted">
+      <div class="container">
+        <small>
+          
+          
+          <a href="user/login.html">
+            Log In
+          </a>
+          
+        </small>
+      </div>
+    </footer>
+    
+
+    
+      
+    
+  <script>document.getElementsByTagName('html')[0].className += ' js';</script>
+<script type="text/javascript" src="fanstatic/vendor/_version_2020-10-28T11_48_10/jquery.min.js"></script>
+<script type="text/javascript" src="fanstatic/vendor/_version_2020-10-28T11_48_10/_bundle_jed.min.js%3bmoment-with-locales.js%3bselect2/select2.min.js"></script>
+<script type="text/javascript" src="fanstatic/base/_version_2020-10-28T11_48_10/_bundle_plugins/jquery.inherit.min.js%3bplugins/jquery.proxy-all.min.js%3bplugins/jquery.url-helpers.min.js%3bplugins/jquery.date-helpers/jquery.form-warning.min"></script>
+<script type="text/javascript" src="fanstatic/datagovsg-lib/_version_2020-10-28T11_48_10/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="fanstatic/datagovsg-js/_version_2020-11-09T11_20_30.97/snippets/ga-events.min.js"></script></body>
+  
+
+
+<!-- Mirrored from data.gov.sg/open-data-licence by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2020 00:39:18 GMT -->
+</html>

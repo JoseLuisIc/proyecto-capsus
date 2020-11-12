@@ -1,0 +1,101 @@
+#table-view .filter {
+  display: none;
+}
+
+#table-view .filter input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  height: 30px;
+}
+
+#table-view #column-filter {
+  margin-bottom: 10px;
+}
+
+#table-view table thead th {
+  border-bottom: 2px #F5F5F5 solid;
+}
+
+#table-view .dataTables_scroll {
+  margin-bottom: 10px;
+}
+
+#table-view .dataTables_info {
+  margin-bottom: 5px;
+}
+
+#table-view label::after {
+  content: "";
+}
+
+#table-view .pagination ul {
+  box-shadow: none;
+  max-height: 32px;
+  overflow: hidden;
+}
+
+#table-view .pagination li > a {
+  padding: 6px 12px;
+  margin: 0 4px;
+  line-height: 1.44;
+  border-width: 0;
+  font-weight: 500;
+  background-color: #F5F5F5;
+}
+
+#table-view .pagination li:first-child > a {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+#table-view .pagination li:last-child > a {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#table-view .pagination .disabled > a {
+  color: #113355;
+  cursor: not-allowed;
+}
+
+#table-view .pagination .disabled:first-child > a,
+#table-view .pagination .disabled:last-child > a {
+  display: none;
+}
+
+#table-view .pagination li:not(.disabled):hover > a,
+#table-view .pagination .active > a {
+  background-color: #113355;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 479px) {
+  #table-view .row-fluid [class*="span"],
+  #table-view .dataTables_filter,
+  #table-view #column-filter,
+  #table-view .dataTables_paginate,
+  #table-view .dataTables_length {
+    float: left;
+  }
+}
+
+html {
+  background: none;
+  overflow: hidden;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+.source {
+  text-align: right;
+  padding-top: 5px;
+  color: #9d9d9d;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.source a {
+  color: inherit;
+}

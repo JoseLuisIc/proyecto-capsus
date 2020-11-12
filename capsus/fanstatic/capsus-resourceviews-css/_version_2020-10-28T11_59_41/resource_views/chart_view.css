@@ -1,0 +1,186 @@
+html {
+  background: none;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  padding: 5px;
+  padding-bottom: 25px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+}
+
+.source {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  color: #9d9d9d;
+  text-transform: uppercase;
+  font-size: 8px;
+}
+
+.source a {
+  color: inherit;
+}
+
+#chart-view {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+#chart.plottable .line-plot .line {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.7;
+}
+
+@media (max-width: 767px) {
+  #chart.plottable .scatter-plot .symbol {
+    visibility: hidden;
+  }
+}
+
+#chart.plottable .axis text {
+  font-size: 10px;
+  font-weight: 300;
+  fill: #95989A;
+}
+
+#chart.plottable .axis .tick-mark, #chart.plottable .axis .baseline {
+  stroke: #afb1b3;
+}
+
+#chart.plottable .axis.hide-baseline .tick-mark, #chart.plottable .axis.hide-baseline .baseline {
+  visibility: hidden !important;
+}
+
+#chart.plottable .axis-label text {
+  fill: #95989A;
+  font-weight: 400;
+}
+
+#chart.plottable .gridlines line {
+  stroke: #c9cbcc;
+  stroke-width: 1px;
+}
+
+#chart.plottable .guide-line-layer line {
+  stroke: #afb1b3;
+}
+
+#chart.plottable .legend text {
+  fill: #95989A;
+  font-weight: 400;
+}
+
+#chart.plottable .pie-plot .label text {
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 300;
+  fill: #95989A;
+}
+
+#chart.plottable .pie-plot .label polyline {
+  stroke: #afb1b3;
+  stroke-width: 1px;
+  fill: none;
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+  #chart.plottable .pie-plot .label {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  #chart.plottable .pie-plot .label {
+    display: none;
+  }
+}
+
+#chart.plottable .shadow .render-area rect {
+  fill: #DEDEDE;
+  opacity: 0.7;
+}
+
+#chart.plottable rect.highlight {
+  fill: #DEDEDE !important;
+}
+
+#chart.plottable ~ .popover {
+  width: auto;
+  border-radius: 3px;
+  font-size: 10px;
+  white-space: nowrap;
+  border-color: #afb1b3;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+#chart.plottable ~ .popover > .arrow {
+  border-width: 9px;
+}
+
+#chart.plottable ~ .popover.left > .arrow {
+  right: -9px;
+  margin-top: -9px;
+  border-right-width: 0;
+  border-left-color: #afb1b3;
+}
+
+#chart.plottable ~ .popover.right > .arrow {
+  left: -9px;
+  margin-top: -9px;
+  border-left-width: 0;
+  border-right-color: #afb1b3;
+}
+
+#chart.plottable ~ .popover.top > .arrow {
+  bottom: -9px;
+  margin-left: -9px;
+  border-bottom-width: 0;
+  border-top-color: #afb1b3;
+}
+
+#chart.plottable ~ .popover.bottom > .arrow {
+  top: -9px;
+  margin-left: -9px;
+  border-top-width: 0;
+  border-bottom-color: #afb1b3;
+}
+
+#chart.plottable ~ .popover .popover-title,
+#chart.plottable ~ .popover .popover-content {
+  color: #7b7f81;
+  font-size: 10px;
+  line-height: 1.25;
+  padding: 3px 10px;
+}
+
+#chart.plottable ~ .popover .popover-title {
+  background-color: inherit;
+  border-bottom: none;
+  font-weight: 500;
+}
+
+#chart.plottable ~ .popover .popover-content {
+  font-weight: 300;
+}
+
+#chart.plottable ~ .popover .popover-content i {
+  display: inline-block;
+  margin-right: 7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+}
+
+#chart.plottable ~ .popover .popover-content .total {
+  padding-left: 13px;
+}
+
+#chart.plottable ~ .popover .popover-content .total span {
+  font-weight: 500;
+}

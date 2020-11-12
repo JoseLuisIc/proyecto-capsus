@@ -1,0 +1,1032 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en_GB">
+
+  
+  
+<!-- Mirrored from data.gov.sg/developer by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2020 00:35:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!--[if lte ie 8]><script type="text/javascript" src="/fanstatic/vendor/:version:2020-10-28T11:48:10/html5.min.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="fanstatic/vendor/_version_2020-10-28T11_48_10/select2/select2.css" />
+<link rel="stylesheet" type="text/css" href="fanstatic/datagovsg-css/_version_2020-11-09T11_20_33.01/_bundle_terms.min.css%3bdatagovsg.min.css" />
+
+
+    <title>
+      Developers-Data.gov.sg
+      
+    </title>
+
+    
+    <meta charset="utf-8">
+    <meta name="generator" content="ckan ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no">
+    <meta name="description" content="Singapore&#39;s open data portal">
+    <meta name="theme-color" content="#113355">
+    <meta name="application-name" content="Data.gov.sg">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@datagovsg">
+    <meta name="twitter:title" content="Developers-Data.gov.sg
+      ">
+    <meta name="twitter:description" content="Singapore&#39;s open data portal">
+    <meta name="twitter:url" content="developer.html">
+    <meta name="twitter:image:src" content="images/thumbnail.png">
+    
+    <meta property="og:title" content="Developers-Data.gov.sg
+      " />
+    <meta property="og:description" content="Singapore&#39;s open data portal" />
+    <meta property="og:type" content="article" >
+    <meta property="og:url" content="developer.html" >
+    <meta property="og:image" content="images/thumbnail.png" >
+    <meta property="og:site_name" content="Data.gov.sg" >
+    
+    <meta name="apple-mobile-web-app-title" content="Data.gov.sg">
+    
+    <meta name="msapplication-TileColor" content="#113355">
+    <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+    
+
+    
+    <link rel="manifest" href="manifest.json">
+    
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#223344">
+    
+    <link rel="shortcut icon" href="images/favicon.ico" >
+    <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="images/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-194x194.png" sizes="194x194">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
+    
+
+    
+  
+      
+    
+  
+
+
+    
+    
+    
+    
+    
+    <script>
+      // Check if script is being ran from Iframe within data.gov.sg.
+      // This prevents dobule counting in Google Analytics tracking when page views are
+      // triggered twice due to embedding of iframe. This allows us to continue tracking
+      // users who are properly embedding the charts.
+      nodeName = window.frameElement ? window.frameElement.nodeName : 'default'
+      if (!(window.location.hostname.indexOf("data.gov.sg") > -1 && nodeName == "IFRAME")) {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-64941664-1', 'auto');
+        ga('send', 'pageview');
+
+        window.onload = function () {
+          //track resource downloads
+          document.body.addEventListener('click', function(event) {
+            var element = findElWithClass(event);
+            if (element !== null && typeof element.className == "string"){
+              var classes = element.className.split(' ');
+              for (var event_type in ga_events) {
+                if (classes.indexOf(event_type) > -1 ) {
+                  var eventCategory = ga_events[event_type].eventCategory;
+                  var eventAction = ga_events[event_type].eventAction;
+                  var eventLabel = element.getAttribute("data-ga") + ": " + window.location.href;
+
+                  if (event_type == "ga-dataset-download") {
+                    eventLabel = element.getAttribute("data-ga");
+                  }
+                  ga('send', 'event', eventCategory, eventAction, eventLabel);
+                }
+              }
+            }
+          });
+        };
+      }
+
+      function findElWithClass(el) {
+        if (el.target) {
+          el = el.target;
+          while (el) {
+            if (typeof el.className == "string"){
+              var classes = el.className.split(' ');
+              for (var event_type in ga_events) {
+                if (classes.indexOf(event_type) > -1 ) {
+                  return el;
+                }
+              }
+            }
+            el = el.parentNode;
+          }
+          return null;
+        }
+      }
+    </script>
+    
+    
+
+  </head>
+  
+
+  
+  <body>
+
+    
+    
+    <nav class="site-nav">
+      <div class="container">
+        <a href="index.html">
+          <img class="site-logo"
+               src="images/logo.svg"
+               alt="Data.gov.sg"
+               title="Data.gov.sg"/>
+        </a>
+        <a href="index.html" class="site-title">Data.gov.sg</a>
+        <div class="flex-spacer"></div>
+
+        
+        <a class="site-link ga-nav-topic-dropdown" data-toggle="collapse" href=".html">Topics<span class="caret"></span></a>
+        
+
+
+        <a class="site-link ga-nav-blog" href='https://blog.data.gov.sg/'>Blog</a>
+        <a class="site-link ga-nav-developers" href='developer.html'>Developers</a>
+        <a class="site-link ga-nav-request" href='https://github.com/datagovsg/datagovsg-datasets/issues/new?title=Dataset%20request:%20%3Cdataset%20title%3E'>Data Request</a>
+
+      </div>
+    </nav>
+    
+
+    
+    <div class="collapse topic-collapse">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Economy
+               href="group/economy.html">
+              <img class="hover-on" src=images/group_icons/active/economy.svg>
+              <img class="hover-off" src=images/group_icons/inactive/economy.svg>
+              <h5 class="topic-title"><small>Economy</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Education
+               href="group/education.html">
+              <img class="hover-on" src=images/group_icons/active/education.svg>
+              <img class="hover-off" src=images/group_icons/inactive/education.svg>
+              <h5 class="topic-title"><small>Education</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Environment
+               href="group/environment.html">
+              <img class="hover-on" src=images/group_icons/active/environment.svg>
+              <img class="hover-off" src=images/group_icons/inactive/environment.svg>
+              <h5 class="topic-title"><small>Environment</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Finance
+               href="group/finance.html">
+              <img class="hover-on" src=images/group_icons/active/finance.svg>
+              <img class="hover-off" src=images/group_icons/inactive/finance.svg>
+              <h5 class="topic-title"><small>Finance</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Health
+               href="group/health.html">
+              <img class="hover-on" src=images/group_icons/active/health.svg>
+              <img class="hover-off" src=images/group_icons/inactive/health.svg>
+              <h5 class="topic-title"><small>Health</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Infrastructure
+               href="group/infrastructure.html">
+              <img class="hover-on" src=images/group_icons/active/infrastructure.svg>
+              <img class="hover-off" src=images/group_icons/inactive/infrastructure.svg>
+              <h5 class="topic-title"><small>Infrastructure</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Society
+               href="group/society.html">
+              <img class="hover-on" src=images/group_icons/active/society.svg>
+              <img class="hover-off" src=images/group_icons/inactive/society.svg>
+              <h5 class="topic-title"><small>Society</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Technology
+               href="group/technology.html">
+              <img class="hover-on" src=images/group_icons/active/technology.svg>
+              <img class="hover-off" src=images/group_icons/inactive/technology.svg>
+              <h5 class="topic-title"><small>Technology</small></h5>
+            </a>
+          </div>
+          
+          <div class="col-xs-4 col-sm-fifth col-sm-ninth">
+            <a class="topic-link ga-nav-topic-selector"
+               data-ga=Transport
+               href="group/transport.html">
+              <img class="hover-on" src=images/group_icons/active/transport.svg>
+              <img class="hover-off" src=images/group_icons/inactive/transport.svg>
+              <h5 class="topic-title"><small>Transport</small></h5>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    
+    
+    <header class="site-header "
+            style="background-image: url(images/header-developer.jpg)">
+      
+      
+      <h1 class="headline container text-center">
+        Developer Guide
+      </h1>
+      
+      
+      
+    </header>
+    
+
+
+    
+    
+    <main class="site-main">
+      
+<section class="developer">
+  <div class="container">
+    <div class="side-bar">
+      <div class="side-bar-item">
+        <h2>Jump to</h2>
+        <a href='#ckan'><div class='page-anchor-link'>CKAN APIs</div></a>
+        <a href='#realtime'><div class='page-anchor-link'>Real-time APIs</div></a>
+      </div>
+
+      <div class="side-bar-item">
+        <h2>Mailing list</h2>
+        <!-- Begin MailChimp Signup Form -->
+        <link href="../cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+        <div class="signup-container">
+          <form action="https://data.us11.list-manage.com/subscribe/post?u=7acbdfcbee5b06640bf2332cc&amp;id=fb576fa115" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+              <p for="mce-EMAIL">Subscribe to the data.gov.sg developers mailing list to receive information about: 
+                <ul> 
+                  <li>New APIs</li>
+                  <li>Updates to existing APIs</li>
+                  <li>Scheduled maintenance hours</li>
+                </ul>
+              </p>
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7acbdfcbee5b06640bf2332cc_fb576fa115" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="datagovsg-btn"></div>
+              </div>
+          </form>
+        </div>
+        <!--End mc_embed_signup-->
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="main-section">
+        <div>
+          <h2>Data.gov.sg developer resources</h2>
+          <p style="font-weight: 100">
+            There are two types of APIs on data.gov.sg. One provides you with access to static tabular data such as time series or listings (aka CKAN APIs), while the other provides you with access to real-time datasets such as weather and traffic conditions.</p>
+
+          <p style="font-weight: 100">
+            If you are using the APIs listed here, please review the
+            <a class="link" href="privacy-and-website-terms.html">Terms of Service</a>, and the 
+            <a class="link" href="open-data-licence.html">Singapore Open Data Licence</a>.
+          </p>
+        </div>
+      </div>
+      <div class="main-section" id="realtime">
+        <div>
+          
+          <h2>Real-time APIs</h2>
+          <p>There are currently 14 real-time APIs on data.gov.sg that provide you with data ranging from taxi availability to weather forecasts. Below is a list of all real-time APIs on data.gov.sg.
+
+          
+          <div id="datasets">
+            
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=9b3b70b8-95c1-4017-848f-9e03a9001620 href="dataset/ipos-apis.html">
+      IPOS applications API
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=intellectual-property-office-of-singapore
+      href="dataset124f.html?organization=intellectual-property-office-of-singapore">
+      Intellectual Property Office of Singapore
+    </a>
+    
+    /
+    22 Mar 2019
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">This dataset contains APIs for the retrieval for the following type of applications:
+- Patents
+- Designs
+- Trademarks</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/API.svg/index.html>
+  
+</div>
+
+</article>
+            
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=4b030589-01a9-404c-9d93-466ae8ae5949 href="dataset/psi.html">
+      Pollutant Standards Index (PSI)
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=national-environment-agency
+      href="dataset5efb.html?organization=national-environment-agency">
+      National Environment Agency
+    </a>
+    
+    /
+    02 Nov 2018
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Overall and regional PSI data (24-hr PSI, Pollutant Concentration and Sub-Index)</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/API.svg/index.html>
+  
+</div>
+
+</article>
+            
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=b07e6f05-7a33-4316-ac8a-b7d8a9744b7a href="dataset/carpark-availability.html">
+      Carpark Availability
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=govtech
+      href="datasetf89d.html?organization=govtech">
+      GovTech
+    </a>
+    
+    /
+    28 Feb 2018
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Get the latest carpark availability in Singapore:
+- Retrieved every minute
+- Use the date_time parameter to retrieve the latest carpark availability at that moment in time
+- Detailed carpark information can be found at https://data.gov.sg/dataset/hdb-carpark-information
+- Limited to 60 requests per minute per API key</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/API.svg/index.html>
+  
+</div>
+
+</article>
+            
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=7c135eff-e7f0-4e64-9563-1899aa32e8c0 href="dataset/realtime-weather-readings.html">
+      Realtime Weather Readings across Singapore
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=national-environment-agency
+      href="dataset5efb.html?organization=national-environment-agency">
+      National Environment Agency
+    </a>
+    
+    /
+    13 Feb 2018
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">NEA provides APIs for readings of temperature, humidity, precipitation and wind conditions at up to one-minute intervals. The data is provided at weather-station level. </p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/API.svg/index.html>
+  
+</div>
+
+</article>
+            
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=15bbd283-c109-47db-8c1d-11e954b1ac17 href="dataset/ultraviolet-index-uvi.html">
+      Ultra-violet Index (UVI)
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=national-environment-agency
+      href="dataset5efb.html?organization=national-environment-agency">
+      National Environment Agency
+    </a>
+    
+    /
+    13 Feb 2018
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">UV Index value averaged over the past hour. Updated every hour between 7 AM and 7 PM everyday.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/API.svg/index.html>
+  
+</div>
+
+</article>
+            
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=e180c35d-8f47-4b55-91c6-ba1cb0c7ac1c href="dataset/traffic-images.html">
+      Traffic Images
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=land-transport-authority
+      href="dataset1fb9.html?organization=land-transport-authority">
+      Land Transport Authority
+    </a>
+    
+    /
+    13 Feb 2018
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Returns links to images of live traffic conditions along expressways and
+Woodlands &amp; Tuas Checkpoints.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/API.svg/index.html>
+  
+</div>
+
+</article>
+            
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=f65c553c-c3c3-4427-af64-2f22324639bd href="dataset/taxi-availability.html">
+      Taxi Availability
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=land-transport-authority
+      href="dataset1fb9.html?organization=land-transport-authority">
+      Land Transport Authority
+    </a>
+    
+    /
+    13 Feb 2018
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">For access to real-time taxi availability data.
+Returns location coordinates of all Taxis that are currently available for
+hire. Does not include "Hired" or "Busy" Taxis.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/API.svg/index.html>
+  
+</div>
+
+</article>
+            
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=9e6da1e5-bebc-42fa-b7fe-fc53de27d138 href="dataset/pm2-5.html">
+      PM2.5
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=national-environment-agency
+      href="dataset5efb.html?organization=national-environment-agency">
+      National Environment Agency
+    </a>
+    
+    /
+    13 Feb 2018
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Regional hourly PM2.5 value measured in μg/m3</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/API.svg/index.html>
+  
+</div>
+
+</article>
+            
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=f9abcacc-148b-4bac-a2a4-c994277859fb href="dataset/weather-forecast.html">
+      Weather Forecast
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=national-environment-agency
+      href="dataset5efb.html?organization=national-environment-agency">
+      National Environment Agency
+    </a>
+    
+    /
+    13 Feb 2018
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">Weather forecast for next 2 hours, next 24 hours and next 4 days.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/API.svg/index.html>
+  
+</div>
+
+</article>
+            
+          </div>
+          
+
+        </div>
+      </div>
+      <div class="main-section" id="ckan">
+        <div>
+          <h2>CKAN APIs</h2>
+          <p>This is an alternative to the data.gov.sg web interface, you can make use of the APIs provided by the CKAN software to access the catalogue of datasets on data.gov.sg.</p>
+          <p>The API provides both RESTful and functional interfaces, all in JSON format, making it suitable for a wide range of clients.</p>
+
+          
+          <div id="datasets">
+            
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=fa04173d-111c-4385-a127-2ca88157bd72 href="dataset/ckan-resource-show.html">
+      CKAN Resource Show
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=govtech
+      href="datasetf89d.html?organization=govtech">
+      GovTech
+    </a>
+    
+    /
+    20 Feb 2018
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">This API returns the metadata of a resource on Data.gov.sg</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/API.svg/index.html>
+  
+</div>
+
+</article>
+            
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=df210f09-4606-4117-84cf-eadbd961e1df href="dataset/ckan-datastore-search.html">
+      CKAN Datastore Search
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=govtech
+      href="datasetf89d.html?organization=govtech">
+      GovTech
+    </a>
+    
+    /
+    20 Feb 2018
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">This API allows you to search for data in a resource.</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/API.svg/index.html>
+  
+</div>
+
+</article>
+            
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=27646f23-8723-4a10-84af-18453105fe78 href="dataset/ckan-package-show.html">
+      CKAN Package Show
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=govtech
+      href="datasetf89d.html?organization=govtech">
+      GovTech
+    </a>
+    
+    /
+    20 Feb 2018
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">This API returns the metadata of a dataset (package) and its resources</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/API.svg/index.html>
+  
+</div>
+
+</article>
+            
+              
+
+<article class="card package-card" >
+
+
+<div class="package-card-details">
+  
+  <h3 class="package-card-title">
+    <a class="ga-dataset-card-title" data-ga=cb136b98-fb86-42f4-b289-0d474faa0fc7 href="dataset/ckan-package-list.html">
+      CKAN Package List
+    </a>
+  </h3>
+
+  
+  <small class="package-card-meta text-muted">
+    
+    <a class='package-card-organization ga-dataset-card-org'
+      data-ga=govtech
+      href="datasetf89d.html?organization=govtech">
+      GovTech
+    </a>
+    
+    /
+    20 Feb 2018
+  </small>
+
+  
+  <p class="package-card-description ga-search-dataset-card-description">This API returns a list of datasets on data.gov.sg</p>
+</div>
+
+
+<div class="resource-formats">
+  
+    
+    <img class="format-icon ga-search-dataset-card-file-icon"
+         src=images/icons/file_type/API.svg/index.html>
+  
+</div>
+
+</article>
+            
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    
+
+    
+
+    
+    <footer class="site-footer">
+      <div class='container'>
+      
+        <div class="row">
+          <div class="col-xs-12 col-md-7 footer-groups">
+            <div class="attribution-group text-left">
+              <h2>Built by</h2>
+              <br>
+                <a href="https://open.gov.sg/">Open Government Products</a><small class="text-muted"> - A Division of GovTech.</small><br><br>
+              <div><small>Last updated on November 11, 2020</small></div>
+              <small>&copy; 2020 Government of Singapore</small>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3 footer-groups">
+            <h2>Useful Links</h2>
+              <div class="footer-link">
+                <a class="ga-footer-about" href="about.html">About Us</a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-privacy" href="privacy-and-website-terms.html">Privacy &amp; Website Terms</a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-odl" href="open-data-licence.html">Open Data Licence</a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-developer-guide" href="developer.html">Developers</a>
+              </div>
+            </div>
+          <div class="col-xs-12 col-md-2 footer-groups">
+            <h2>Find Us</h2>
+              <div class="footer-link">
+                <a class="ga-footer-email" href="mailto:feedback@data.gov.sg?Subject=[Data.gov.sg] Feedback">
+                <img class="footer-site-icon"
+                  src="images/email_white.png"
+                  title="Email"/>Email
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-facebook" href="https://www.facebook.com/opendatasg/">
+                  <img class="footer-site-icon"
+                  src="images/fb_white.svg"
+                  title="Facebook"/>Facebook
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-twitter" href="https://twitter.com/datagovsg">
+                  <img class="footer-site-icon"
+                  src="images/twitter_white.svg"
+                  title="Twitter"/>Twitter
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-medium" href="https://blog.data.gov.sg/">
+                <img class="footer-site-icon"
+                  src="images/medium_white.svg"
+                  title="Medium"/>Medium
+                </a>
+              </div>
+              <div class="footer-link">
+                <a class="ga-footer-github" href="https://github.com/datagovsg">
+                <img class="footer-site-icon"
+                  src="images/github_white.svg"
+                  title="Github"/>Github
+                </a>
+              </div>
+          </div>
+
+
+
+   <!--      <nav class="footer-links">
+
+        </nav>
+ -->
+      
+      </div>
+    </footer>
+    
+
+    
+    
+    <footer class="site-account text-right text-muted">
+      <div class="container">
+        <small>
+          
+          
+          <a href="user/login.html">
+            Log In
+          </a>
+          
+        </small>
+      </div>
+    </footer>
+    
+
+    
+      
+    
+  <script>document.getElementsByTagName('html')[0].className += ' js';</script>
+<script type="text/javascript" src="fanstatic/vendor/_version_2020-10-28T11_48_10/jquery.min.js"></script>
+<script type="text/javascript" src="fanstatic/vendor/_version_2020-10-28T11_48_10/_bundle_jed.min.js%3bmoment-with-locales.js%3bselect2/select2.min.js"></script>
+<script type="text/javascript" src="fanstatic/base/_version_2020-10-28T11_48_10/_bundle_plugins/jquery.inherit.min.js%3bplugins/jquery.proxy-all.min.js%3bplugins/jquery.url-helpers.min.js%3bplugins/jquery.date-helpers/jquery.form-warning.min"></script>
+<script type="text/javascript" src="fanstatic/datagovsg-lib/_version_2020-10-28T11_48_10/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="fanstatic/datagovsg-js/_version_2020-11-09T11_20_30.97/snippets/ga-events.min.js"></script></body>
+  
+
+
+<!-- Mirrored from data.gov.sg/developer by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2020 00:35:57 GMT -->
+</html>
