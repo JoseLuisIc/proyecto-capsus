@@ -1,0 +1,29 @@
+#api-view {
+  max-height: 600px;
+  overflow: scroll;
+}
+
+#api-view .btn {
+  box-sizing: border-box;
+}
+
+#api-view .opblock-summary {
+  pointer-events: none;
+}
+
+#api-view .opblock-summary-path span::before {
+  content: attr(data-prefix);
+}
+
+#api-view .response-col_links {
+  display: none;
+}
+
+#api-view .swagger-ui table {
+  table-layout: auto;
+}
+
+#api-view .swagger-loading {
+  text-align: center;
+  line-height: 48px;
+}
